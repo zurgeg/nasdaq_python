@@ -10,7 +10,7 @@ class Stock:
     self.t = self.soup.find('div',{'id':'qwidget_pageheader'})
   def price(self,verbose=False):
     try:
-      rt = a.find_all('div')[0].text
+      rt = self.a.find_all('div')[0].text
       if rt.strip() == self.symbol.upper():
         return self.a.find_all('div')[1].text
       else:

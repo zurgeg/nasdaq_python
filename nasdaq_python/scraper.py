@@ -8,7 +8,7 @@ class Stock:
     self.soup = bs4.BeautifulSoup(self.html,'html.parser')
     self.a = self.soup.find('div',{'id':'qwidget_quote'})
     self.t = self.soup.find('div',{'id':'qwidget_pageheader'})
-  def price(self):
+  def price(self,verbose=False):
     try:
       rt = a.find_all('div')[0].text
       if rt.strip() == self.symbol.upper():
@@ -16,9 +16,15 @@ class Stock:
       else:
         return self.a.find_all('div')[0].text
     except Exception as e:
-      return None
-  def company(self):
+      if verbose:
+        return e
+      else:
+        return None
+  def company(self,verbose=False):
     try:
       return self.t.find_all('h1')[0].text
     except Exception as e:
-      return None
+      if verbose:
+        return e
+      else:
+        return None

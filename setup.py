@@ -11,7 +11,7 @@ setup(
   download_url = 'https://github.com/zurgeg/security-python/master/v0_1.tar.gz',    # I explain this later on
   keywords = ['Nasdaq', 'Scraper', 'Stock'],   # Keywords that define your package best
   install_requires=[            # I get to this in a second
-          'beautifulsoup',
+          'beautifulsoup4',
           'requests'
       ],
   classifiers=[

@@ -1,4 +1,5 @@
 from .scraper import Stock
+import .bond_scraper as bonds
 if __name__ == '__main__':
   symbol = input('Enter Symbol:')
   r = requests.get('https://old.nasdaq.com/symbol/{}'.format(symbol.lower()))

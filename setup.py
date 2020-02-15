@@ -8,7 +8,7 @@ setup(
   author = 'JonathanG',                   # Type in your name
   author_email = 'ceo@graffbt.com',      # Type in your E-Mail
   url = 'https://github.com/zurgeg/nasdaq_python',   # Provide either the link to your github or to your website
-  download_url = 'https://github.com/zurgeg/security-python/master/v1_5.tar.gz',    # I explain this later on
+  download_url = 'https://github.com/zurgeg/security-python/master/v1_6.tar.gz',    # I explain this later on
   keywords = ['Nasdaq', 'Scraper', 'Stock'],   # Keywords that define your package best
   install_requires=[            # I get to this in a second
           'beautifulsoup4',

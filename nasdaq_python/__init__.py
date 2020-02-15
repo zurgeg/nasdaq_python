@@ -1,4 +1,4 @@
-from scraper.py import Stock
+from .scraper import Stock
 if __name__ == '__main__':
   symbol = input('Enter Symbol:')
   r = requests.get('https://old.nasdaq.com/symbol/{}'.format(symbol.lower()))

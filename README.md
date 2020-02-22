@@ -6,7 +6,7 @@ Search for a company
 
 Support for the Bond Market
 
-```pip install nasdaq_python``` support
+~~```pip install nasdaq_python``` support~~
 
 Docs at Readthedocs.io
 
